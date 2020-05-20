@@ -1,0 +1,670 @@
+@font-face {
+    font-family: 'Berlin Sans FB';
+    src: url('fonts/BerlinSansFB-Reg.woff2') format('woff2'),
+        url('fonts/BerlinSansFB-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Berlin Sans FB';
+    src: url('fonts/BerlinSansFB-Bold.woff2') format('woff2'),
+        url('fonts/BerlinSansFB-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Berlin Sans FB';
+    src: url('fonts/BerlinSansFBDemi-Bold.woff2') format('woff2'),
+        url('fonts/BerlinSansFBDemi-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+@import "vars";
+
+
+
+.woodmart-prefooter {
+    display: none;
+
+}
+/*Ajuste de FullWidth*/
+
+.page-template {
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+span.nav-link-text {
+  color: @gris;
+  font-family: 'Berlin Sans FB';
+     font-size: 18px;
+    font-weight: 500;
+}
+span.nav-link-text {
+    &:hover{
+    color: @azul;
+    }
+}
+ .main-page-wrapper {
+    padding-top: inherit;
+    margin-top: -40px;
+    background-color: #fff;
+}
+
+/*Esquema por defecto para las secciones*/
+body {
+         .row {
+    display: inherit!important;
+
+    }
+}
+
+.grid {
+    display: flex;
+    .col {
+        width: 50%;
+    }
+    .col2 {
+        width: 33.33%;
+    }
+    .col3 {
+        width: 25%;
+    }
+    .col4 {
+        width: 40%;
+    }
+    .col5{
+        width: 60%;
+    }
+}
+.grid2{
+    display: inline-flex;
+    .col {
+        width: 50%;
+    }
+    .col2 {
+        width: 33.33%;
+    }
+    .col3 {
+        width: 25%;
+    }
+    .col4 {
+        width: 40%;
+    }
+    .col5{
+        width: 60%;
+    }
+}
+
+/*Ajuste general*/
+body {
+    .contenedor {
+       max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+        .col {
+        min-height: 500px;
+        padding: 60px;
+    }
+    }
+    .contenedor2 {
+       max-width: 1250px;
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    
+}
+
+.template-section {
+    
+        padding: 50px 0;
+    
+
+   
+    
+    h1 {
+       
+      font-family: 'Berlin Sans FB';
+        font-weight: bold;
+            font-size: 70px;
+        font-weight: 900;
+     
+        
+    }
+
+    h2 {
+        font-family: 'Berlin Sans FB';
+        font-size: 50px;
+     //   font-weight: bold;
+            font-weight: 500;
+        line-height: 1.3em;
+       
+        &.blanco{
+            color: white;
+        }
+        &.azul {
+            color: @azul;
+        }
+        &.gris {
+            color: @gris;
+        }
+        &.mayor {
+             font-size: 70px;
+        }
+       
+    }
+    h3 {
+        font-size: 35px;
+        font-family: 'Berlin Sans FB';
+        color: @azul;
+        font-weight: 500;
+            line-height: 35px;
+       
+    }
+
+    a,p,
+    ul {
+        color: @gris;
+       font-size: 22px;
+    font-family: 'Berlin Sans FB';
+       font-weight: 500;
+        &.blanco {
+            color: white;
+        }
+        b{
+            color: @azul;
+        }
+    }
+
+    ul {
+       
+        
+        li {
+           
+            color: @gris;
+            position: relative;
+            margin-left: 15px;
+                margin-bottom: 20px;
+            &::before {
+               
+  content: "•";
+  color: @azul;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+            }
+        }
+
+  
+    }
+       .btn {
+    transition: all 0.3s ease-in-out;
+    font-family: 'Berlin Sans FB';
+    text-transform: none;
+       font-size: 28px;
+    font-weight: 500;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    background: @naranja;
+    color: white;
+            &:hover {
+                background: @azul;
+               
+            }
+        
+    }
+    .center {
+        text-align: center;
+    }
+}
+
+
+
+#slider{
+    background-color: @azul;
+    padding: inherit;
+  //   background: url(../img/slider.jpg) center no-repeat;
+    .fondo {
+      background: url(../img/slider.jpg) right no-repeat;
+    background-size: cover;
+    height: 600px;
+    }
+    .ban{
+        
+        max-width: 420px;
+        position: relative;
+        float: right;
+        right: 80px;
+            top: 115px;
+    }
+    p{
+        text-align: justify;
+    }
+    .btn{
+        margin-top: 10px;
+    }
+}
+#somos{
+   
+    padding: inherit;
+  //   background: url(../img/slider.jpg) center no-repeat;
+    .fondo {
+      background: url(../img/somos.jpg) left no-repeat;
+    background-size: cover;
+    height: 600px;
+    }
+    .ban{
+        
+        max-width: 420px;
+        position: relative;
+        float: left;
+        left: 80px;
+            top: 115px;
+    }
+    p{
+        text-align: justify;
+    }
+    .btn{
+        margin-top: 10px;
+    }
+}
+#servicios{
+    background: url(../img/servicios.jpg) center no-repeat;
+    background-size: cover;
+    h2{
+        text-align: center;
+    }
+    .ban{
+            max-width: 450px;
+        display: block;
+           margin: auto;
+    }
+    p{
+        text-align: justify;
+        text-align-last: center;
+    }
+}
+#galeria{
+    h2{
+        text-align: center;
+        span {
+        display: block;
+    }
+    }
+    .center{
+        margin-top: 20px;
+    }
+    .esg-grid .mainul li.eg-washington-wrapper {
+    /* display: none!important; */
+    background: transparent;
+    }
+   li::before {
+    color: transparent;
+    }
+}
+#nuestra {
+     .col2 {
+            padding: 40px;
+    }
+    background-color: @azul;
+    img{
+            display: block;
+    margin: auto;
+    }
+    h3{
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+    }
+}
+#contacto {
+    background-color: @grisfondo;
+    .col.datos {
+    position: relative;
+    top: 100px;
+}
+    img.so {
+        margin-right: 20px;
+    }
+     .caldera-grid .form-control {
+    
+    background-color: transparent;
+    border: 2px solid @gris;
+        color: @gris;
+        font-size: 22px;
+    font-family: 'Berlin Sans FB';
+}
+     .caldera-grid .form-control::placeholder, .caldera-grid .form-control, label  { 
+        color: @gris;
+        font-size: 22px;
+    font-family: 'Berlin Sans FB';
+       
+    }
+    .btn {
+            float: right;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Berlin Sans FB';
+    text-transform: none;
+    font-size: 28px;
+    font-weight: 500;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+   
+    background: @naranja;
+    color: white;
+            &:hover {
+                background: @azul;
+               
+            }
+    }
+    .datosnuevos {
+            position: relative;
+    top: 224px;
+    }
+    p.cont{
+        position: relative;
+    top: -43px;
+    right: 45px;
+    }
+}
+
+
+/**QUIENES SOMOS*/
+
+#slider2{
+    background-color: @gris;
+    padding: inherit;
+  //   background: url(../img/slider.jpg) center no-repeat;
+    .fondo {
+      background: url(../img/slider2.jpg) right no-repeat;
+    background-size: cover;
+    height: 600px;
+    }
+    .ban{
+        
+            max-width: 420px;
+    position: relative;
+    float: right;
+    right: 80px;
+    top: 60px;
+    }
+    p{
+        text-align: justify;
+    }
+    .btn{
+        margin-top: 10px;
+    }
+}
+#mision {
+    img {
+        position: relative;
+    top: 70px;
+    right: 30px;
+    }
+    p{
+        text-align: justify;
+    }
+   .col {
+    min-height: inherit;
+    padding: 0px;
+}
+    .especial{
+        padding: 60px;
+    }
+}
+#vision {
+    background: url(../img/servicios.jpg) right no-repeat;
+    background-size: cover;
+    img {
+        position: relative;
+    top: 70px;
+    left: 30px;
+    }
+    p{
+        text-align: justify;
+    }
+   .col {
+    min-height: inherit;
+    padding: 0px;
+}
+    .especial{
+        padding: 60px;
+    }
+}
+#valores {
+    .es{
+        position: relative;
+    top: 21px;
+    }
+    .col2 {
+            padding: 40px;
+    }
+    h2,p{
+        text-align: center;
+    }
+     img{
+            display: block;
+    margin: auto;
+    }
+    h3{
+        margin-top: 20px;
+        color: @azul;
+        text-align: center;
+    }
+}
+#participacion{
+    background-color: @grisfondo;
+    .contenedor{
+        background-color: white;
+        padding: 50px;
+    }
+    h2, p{
+        text-align: center;
+    }
+}
+
+/**NUESTROS SERVICIOS**/
+
+#slider3{
+     padding: 100px 0;
+     background: url(../img/slider3.jpg) center no-repeat;
+    background-size: cover;
+    h2{
+        text-align: center;
+    }
+    .ban{
+        max-width: 700px;
+        display: block;
+        margin: auto;
+        p{
+            text-align: center;
+        }
+    }
+    
+}
+#especialistas {
+    img {
+        position: relative;
+       top: 118px;
+    right: 30px;
+    }
+    ul li{
+        text-align: justify;
+    }
+   .col {
+    min-height: inherit;
+    padding: 0px;
+}
+    .especial{
+        padding: 60px;
+    }
+}
+#especialistas2 {
+    padding: 0px;
+     background: url(../img/servicios.jpg) center no-repeat;
+    img {
+            position: relative;
+    top: 84px;
+    left: 30px;
+    }
+    ul li{
+        text-align: justify;
+    }
+   .col {
+    min-height: inherit;
+    padding: 0px;
+}
+    .especial{
+        padding: 60px;
+    }
+}
+#especialistas3 {
+    background-color: @azul;
+    img {
+        position: relative;
+           top: 20px;
+    right: 30px;
+    }
+    ul li{
+        text-align: justify;
+    }
+   .col {
+    min-height: inherit;
+    padding: 0px;
+}
+    .especial{
+        padding: 60px;
+    }
+    ul {
+       
+        
+        li {
+           
+            color: white;
+          
+            &::before {
+               
+ 
+  color: white;
+
+            }
+        }
+
+  
+    }
+}
+#especialistas4 {
+       padding: 0px;
+     
+    img {
+            position: relative;
+    top: 84px;
+    left: 30px;
+    }
+    ul li{
+        text-align: justify;
+    }
+   .col {
+    min-height: inherit;
+    padding: 0px;
+}
+    .especial{
+                padding: 115px 0px;
+    display: block;
+    margin: auto;
+    }
+    .fondo {
+      background: url(../img/e4.jpg) right no-repeat;
+    background-size: cover;
+    height: 600px;
+    }
+    .ban{
+         max-width: 420px;
+    position: relative;
+    float: right;
+    right: 100px;
+    }
+}
+#npersonal {
+       padding: 0px;
+     
+    img {
+            position: relative;
+    top: 84px;
+    right: 30px;
+    }
+    ul li{
+        text-align: justify;
+    }
+   .col {
+    min-height: inherit;
+    padding: 0px;
+}
+    .especial{
+                padding: 115px 0px;
+    display: block;
+    margin: auto;
+    }
+    .fondo {
+      background: url(../img/e5.jpg) right no-repeat;
+    background-size: cover;
+    height: 600px;
+    }
+    .ban{
+         max-width: 420px;
+    position: relative;
+    float: left;
+    left: 100px;
+    }
+}
+#nequipo {
+    padding: 100px 0;
+    .ban{
+        max-width: 1000px;
+        display: block;
+        margin: auto;
+    }
+    h3{
+        text-align: justify;
+        text-align-last: center;
+    }
+}
+#ofrecemos {
+   background-color: @azul;
+    .ban{
+        max-width: 1200px;
+        display: block;
+        margin: auto;
+    }
+    h3{
+        color: white;
+        text-align: center;
+        
+        font-size: 40px;
+    }
+}
+#esbrillante{
+    padding: 20px 0;
+    background-color: @azul;
+    a{
+        text-align: center;
+        color: white;
+         font-size: 1.4em;
+    font-family: 'Berlin Sans FB';
+       font-weight: 500;
+    }
+}
+
+   @import "responsive";
