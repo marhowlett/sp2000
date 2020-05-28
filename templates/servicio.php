@@ -60,7 +60,7 @@
                 
                 </div>
                 <div class="col">
-                  <img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/e2.jpg" alt="Logo">
+                  <img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/e2nuevo.jpg" alt="Logo">
                 </div>
                 
 
@@ -72,7 +72,7 @@
  <div class="contenedor2">
   <div class="grid">
                 <div class="col">
-                  <img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/e3.jpg" alt="Logo">
+                  <img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/e3nuevo.jpg" alt="Logo">
                 </div>
                 <div class="col especial">
                    

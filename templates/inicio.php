@@ -44,7 +44,7 @@
 
   <p class="gris">Somos <b>SP2000</b> una empresa con 20 años de experiencia en el aseguramiento de calidad y asesoría técnica en los procesos de fabricación y montaje de estructuras, tanques y tuberías de acero. </p>
 
-     <a href="https://sp2000.com.mx/quienes-somos/"  class="btn"> <span>Saber más</span></a>
+     <a href="https://sp2000.com.mx/quienes-somos/"  class="btn"> <span>ME INTERESA</span></a>
    
     
                 </div>
